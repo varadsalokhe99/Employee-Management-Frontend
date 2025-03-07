@@ -1,0 +1,27 @@
+<div class="container">
+  
+    <div class="card p-3 mt-5" >
+    
+      
+      <mat-form-field appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input matInput placeholder="User Name" name="userName" [(ngModel)]="login.userName">
+        <mat-icon matSuffix>person</mat-icon>
+        
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="login.password">
+        <mat-icon matSuffix>lock</mat-icon>
+        
+      </mat-form-field>
+
+      <div class="text-center mt-3">
+        <button mat-raised-button type="button" color="primary" class="m-2" (click)="onLogin()">Login</button>
+      </div>
+      
+   
+  </div>
+
+</div>
